@@ -1,0 +1,215 @@
+html{
+    position: relative;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: serif,'sans-serif';
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: white;
+}
+
+.container-fluid{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-content-holder {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-content{
+    margin-right: 20px;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.nav-content a {
+    color: black;
+}
+
+.nav-content a:hover {
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+#img-container {
+   text-align: center;
+}
+
+#goggle-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-hold {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: white;
+    border: thin solid grey;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 30px;
+}
+
+#search-hold:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type='text']:focus {
+    outline: none;
+}
+
+#textInput {
+    flex: 1;
+    height: 50px;
+    border: none;
+    font-size: large;
+}
+
+#textInput:hover{
+    border: none;
+}
+
+.icon1 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.icon2 {
+    margin-top: 10px;
+}
+
+#btn-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btn-holder > button {
+    margin-left: 20px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-size: 100%;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#btn-holder > button:hover {
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+#lang-texts {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 60%;
+}
+
+#lang-texts > a {
+    padding-left: 10px;
+}
+
+#lang-texts > a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nigeria {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 45px;
+    color: rgba(0,0,0,.54);
+}
+
+.footer a {
+    color: rgba(0,0,0,.54);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.carbon-about-privacy {
+    background-color: rgb(211,211,211);
+}
+
+.carbon, .about, .privacy {
+    text-align: center;
+}
+
+.about > a, .privacy > a {
+    padding-left: 20px;
+}
+
+@media (min-width: 688px){
+    #search-hold {
+        width: 60vw;
+    }
+
+    #lang-texts {
+        width: 55%;
+    }
+
+    .carbon-about-privacy {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carbon, .about, .privacy{
+        margin-left: 20px;
+    }
+
+    .about > a, .privacy > a {
+        padding-left: 10px;
+    }
+
+  }
+
+@media (min-width: 992px){
+    #search-hold {
+        width: 50vw;
+    }
+
+    #lang-texts {
+        width: 45%;
+    }
+
+    .carbon-about-privacy {
+        justify-content: space-between;
+    }
+  }
+
+@media (min-width: 1312px){
+    #search-hold {
+        width: 35vw;
+    }
+
+    #lang-texts {
+        width: 30%;
+    }
+  }
+
+
