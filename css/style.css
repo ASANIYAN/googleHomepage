@@ -9,7 +9,7 @@ html{
 body {
     min-height: 90vh;
     margin: 0;
-} 
+}
 
 .container-fluid{
     width: 100%;
@@ -20,7 +20,33 @@ body {
 #nav-content-holder {
     margin-top: 10px;
     display: flex;
-    justify-content: flex-end;
+}
+
+#mobile-content-holder {
+    display: flex;
+}
+
+#nav-svg {
+    transform: translateY(-3px);
+}
+
+.mobile-content{
+    margin-right: 20px;
+    font-size: medium;
+    font-weight: lighter;
+    color: rgba(0,0,0,.54)
+}
+
+.mobile-content a {
+    color: black;
+}
+
+.mobile-content a:hover {
+    text-decoration: underline;
+}
+
+#nav-content1-holder {
+    display: flex;
 }
 
 .nav-content{
@@ -135,6 +161,37 @@ input[type='text']:focus {
     text-decoration: underline;
 }
 
+#sidebar {
+    background-color: #fff;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 200;
+    outline: none;
+    overflow-y: scroll;
+    width: 250px;
+    transition: 0.5s;
+    font-size: 16px;
+    padding-top: 15px;
+    left: -250px;
+
+}
+
+#sidebar-img {
+    height: 36px;
+    width: 92px;
+}
+
+.sidebar-content {
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,.54);
+    height: 48px;
+    line-height: 20px;
+    width: 100%;
+    vertical-align: middle;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -172,13 +229,53 @@ input[type='text']:focus {
     padding-left: 20px;
 }
 
+.overlay {
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 199;
+}
+
+@media (max-width: 687px){
+    #goggle-image{
+        width: 200px;
+    }
+
+    #gmail {
+        display: none;
+    }
+
+    #images {
+        display: none;
+    }
+
+    #nav-content-holder {
+        justify-content: space-between;
+    }
+}
+
 @media (min-width: 688px){
+
+    #mobile-content-holder {
+        display: none;
+    }
+
+    #nav-content-holder {
+        justify-content: flex-end;
+    }
+
     #search-hold {
         width: 60vw;
     }
 
     #lang-texts {
         width: 55%;
+    }
+
+    #sidebar {
+        display: none;
     }
 
     .carbon-about-privacy {
@@ -192,6 +289,10 @@ input[type='text']:focus {
 
     .about > a, .privacy > a {
         padding-left: 10px;
+    }
+
+    #overlay {
+        display: none;
     }
 
   }
