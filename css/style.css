@@ -230,6 +230,42 @@ input[type='text']:focus {
     padding-left: 20px;
 }
 
+#extras {
+    width: 82%;
+    height: 50%;
+    position: absolute;
+    top: 6%;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    border: thin solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row a {
+    text-decoration: none;
+    color: black;
+}
+
+.span-text {
+    font-weight: light;
+    font-size: 18px;
+}
+
 .overlay {
     top: 0;
     position: fixed;
@@ -304,6 +340,10 @@ input[type='text']:focus {
 
     .about > a, .privacy > a {
         padding-left: 10px;
+    }
+
+    #extras {
+        display: none;
     }
 
     #overlay {
